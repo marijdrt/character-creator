@@ -4,9 +4,11 @@
 }
 
 .maxWidthWrapper {
+  position: relative;
 }
 
 .header {
+  width: 65%;
   padding-bottom: 64px;
 }
 
@@ -24,7 +26,37 @@
 }
 
 .characterWrapper {
+  min-height: 400px;
+  width: 40%;
+  position: fixed;
+  top: 10%;
+  left: 60%;
 }
 
 .controlColumn {
+  width: 50%;
+}
+
+.backgroundEffect {
+  position: fixed;
+  bottom: 0;
+  height: 40%;
+  width: 100%;
+  background-color: hsl(195deg, 20%, 86%);
+}
+
+@media (max-width: 760px) {
+  .header {
+    width: 100%;
+  }
+
+  .characterWrapper {
+    width: 100%;
+    position: static;
+  }
+
+  .controlColumn {
+    width: 100%;
+    white-space: nowrap;
+  }
 }
